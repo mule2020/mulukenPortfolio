@@ -1,0 +1,363 @@
+<section class="hero text-center" style="background-image: url('assets/images/hero1.jpg'); background-size: cover; background-position: center;">
+    <div class="container py-5">
+      <img src="assets/images/pp.JPG" alt="Profile" class="rounded-circle" width="150">
+      <h1 class="mt-3">Muluken Bekele</h1>
+      <h3>Full Stack Developer</h3>
+      <div class="mt-4">
+        <button routerLink="/" fragment="contact" class="btn btn-success me-3">Hire Me</button>
+      
+        <a href="assets/resume/resume.docx" download class="btn btn-success">Download CV</a>
+      </div>
+      
+    </div>
+  </section>
+  
+  
+  <div class="social-icons-floating d-flex justify-content-center">
+    <a href="#" class="social-icon me-3">
+      <img src="assets/images/fb.png" alt="Facebook" width="30">
+    </a>
+    <a href="#" class="social-icon me-3">
+      <img src="assets/images/ln.png" alt="Twitter" width="30">
+    </a>
+    <a href="#" class="social-icon me-3">
+      <img src="assets/images/fb.png" alt="LinkedIn" width="30">
+    </a>
+  </div>
+  
+  <!-- About Section -->
+  <section id="about" class="container mt-5 p-4 bg-white shadow rounded">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>About</h2>
+        <p>I am Muluken Bekele, a full stack developer with a Bachelor of Science in Computer Science. I have three years of experience and strong skills in Python, C#, .NET, NestJS, React, Angular, and more. I am passionate about developing efficient and innovative solutions to complex problems.</p>
+      </div>
+  
+      <div class="col-md-6">
+        <h2>Basic Information</h2>
+        <ul class="list-unstyled">
+          <li><strong>Age:</strong> 24</li>
+          <li><strong>Email:</strong> mulukenbekele&commat;gmail.com</li>
+          <li><strong>Phone:</strong> +1 437-858-7938</li>
+          <li><strong>Address:</strong> Toronto, Canada</li>
+          <li><strong>Language:</strong> English, Amharic</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Skills Section  -->
+<section id="skills" class="container mt-5 p-4 bg-white shadow rounded">
+    <h2 class="text-center">Professional Skills</h2>
+    <div class="row mt-4">
+      
+      <div class="col-md-6">
+        <div *ngFor="let skill of skills.slice(0, 3)" class="skill mb-4">
+          <div class="d-flex justify-content-between">
+            <span>{{ skill.name }}</span>
+            <span>{{ skill.percentage }}%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" 
+                 [style.width.%]="skill.percentage" 
+                 [attr.aria-valuenow]="skill.percentage" 
+                 aria-valuemin="0" 
+                 aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+      
+     
+      <div class="col-md-6">
+        <div *ngFor="let skill of skills.slice(3, 6)" class="skill mb-4">
+          <div class="d-flex justify-content-between">
+            <span>{{ skill.name }}</span>
+            <span>{{ skill.percentage }}%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" 
+                 [style.width.%]="skill.percentage" 
+                 [attr.aria-valuenow]="skill.percentage" 
+                 aria-valuemin="0" 
+                 aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+ <!-- Portfolio Section -->
+<section id="portfolio" class="container mt-5 p-4 bg-white shadow rounded">
+    <h2 class="text-center">Portfolio</h2>
+    <div class="text-center mt-4">
+      <button class="btn btn-outline-success mx-2">
+        <img src="assets/images/monitor.png" alt="LinkedIn" width="20"> 
+      </button>
+      <button class="btn btn-outline-success mx-2">
+        <img src="assets/images/gallery.png" alt="LinkedIn" width="20"> 
+      </button><button class="btn btn-outline-success mx-2">
+        <img src="assets/images/camera.png" alt="LinkedIn" width="20"> 
+      </button>
+    </div>
+  
+    <div class="row mt-4">
+      <!-- Left Column -->
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-6 mb-4">
+            <div class="portfolio-item">
+              <img src="assets/images/hero1.jpg" alt="Portfolio Item 1" class="img-fluid rounded shadow">
+            </div>
+          </div>
+          <div class="col-6 mb-4">
+            <div class="portfolio-item">
+              <img src="assets/images/hero1.jpg" alt="Portfolio Item 2" class="img-fluid rounded shadow">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Right Column -->
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-6 mb-4">
+            <div class="portfolio-item">
+              <img src="assets/images/hero1.jpg" alt="Portfolio Item 3" class="img-fluid rounded shadow">
+            </div>
+          </div>
+          <div class="col-6 mb-4">
+            <div class="portfolio-item">
+              <img src="assets/images/hero1.jpg" alt="Portfolio Item 4" class="img-fluid rounded shadow">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+<section id="experience" class="container mt-5 p-4 bg-white shadow rounded">
+    <h2 class="text-center">Work Experience</h2>
+  <!-- Experience Entry 1 -->
+  <div class="row mt-4">
+    <div class="col-md-4 bg-success text-white p-3">
+      <h5>September 2023 - Present</h5>
+      <p>Freelance</p>
+    </div>
+    <div class="col-md-8 bg-light p-3">
+      <h5>Full Stack Developer</h5>
+      <p>
+        As a freelance full stack developer, I deliver tailored software solutions using technologies like Python, C#, .NET, NestJS, React, and Angular. I focus on clear communication, clean code, and meeting deadlines, ensuring each project exceeds client expectations.      </p>
+    </div>
+  </div>
+    <!-- Experience Entry 2 -->
+    <div class="row mt-4">
+      <div class="col-md-4 bg-success text-white p-3">
+        <h5>January 2023 - August 2023</h5>
+        <p>ZooM Tech Trading PLC</p>
+      </div>
+      <div class="col-md-8 bg-light p-3">
+        <h5>Software Engineer</h5>
+        <p>
+          Designed and deployed a profitable A2P web application, sold as a SaaS solution to numerous clients at a premium price, significantly boosting company revenue. Enhanced communication within smart city infrastructures, leading to improved public services.
+          Improved project efficiency by implementing agile methodologies, resulting in timely and successful project deliveries.
+          Developed and integrated backend REST APIs using nestJs, typescript, postgreSQL, and typeORM for a job application project.        </p>
+      </div>
+    </div>
+  
+    
+  
+    <!-- Experience Entry 3 -->
+    <div class="row mt-4">
+      <div class="col-md-4 bg-success text-white p-3">
+        <h5>July 2022 - December 2022</h5>
+        <p>Medaf Delivery</p>
+      </div>
+      <div class="col-md-8 bg-light p-3">
+        <h5>Software Engineer</h5>
+        <p>
+          Engineered and implemented backend REST APIs for a food delivery app using Node.js, Sequelize, and PostgreSQL.Optimized the admin dashboard, streamlining order management and analytics, which led to improved operational efficiency and increased customer satisfaction.        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Education Section -->
+<section id="education" class="container mt-5 p-4 bg-white shadow rounded">
+    <h2 class="text-center">Education</h2>
+  
+    <!-- Education Entry 1 -->
+    <div class="row mt-4">
+      <div class="col-md-4 bg-success text-white p-3">
+        <h5>Start Date - End Date</h5>
+        <p>Degree Type</p>
+      </div>
+      <div class="col-md-8 bg-light p-3">
+        <h5>Full Degree Name</h5>
+        <small>University Name</small>
+        <p>
+          Description of the degree program goes here. This could include key subjects studied, projects undertaken, and any honors received during the course of study.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Education Entry 2 -->
+    <div class="row mt-4">
+      <div class="col-md-4 bg-success text-white p-3">
+        <h5>Start Date - End Date</h5>
+        <p>Degree Type</p>
+      </div>
+      <div class="col-md-8 bg-light p-3">
+        <h5>Full Degree Name</h5>
+        <small>University Name</small>
+        <p>
+          Description of the degree program goes here. This could include key subjects studied, projects undertaken, and any honors received during the course of study.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Education Entry 3 -->
+    <div class="row mt-4">
+      <div class="col-md-4 bg-success text-white p-3">
+        <h5>Start Date - End Date</h5>
+        <p>Degree Type</p>
+      </div>
+      <div class="col-md-8 bg-light p-3">
+        <h5>Full Degree Name</h5>
+        <small>University Name</small>
+        <p>
+          Description of the degree program goes here. This could include key subjects studied, projects undertaken, and any honors received during the course of study.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Reference Section -->
+<section id="reference" class="container mt-5 p-4 bg-white shadow rounded">
+    <h2 class="text-center">Reference</h2>
+  
+    <div class="row mt-4">
+      <!-- Left Side: Image and Caption -->
+      <div class="col-md-4 d-flex flex-column align-items-center">
+        <img src="assets/images/pp.JPG" alt="Reference Image" class="img-fluid rounded-circle" style="width: 80px; height: 80px;">
+        <h5 class="mt-2">Zelalem Ayele</h5>
+        <p>Senior Software Engineer</p>
+      </div>
+  
+      <!-- Right Side: Description -->
+      <div class="col-md-8 bg-light p-3">
+        <p>
+          Muluken Bekele is a dedicated and skilled full stack developer with a deep understanding of both frontend and backend technologies. His attention to detail, problem-solving abilities, and commitment to delivering high-quality solutions make him an asset to any team. He consistently demonstrates strong technical expertise and collaboration skills, contributing to the success of projects.        </p>
+      </div>
+    </div>
+  
+    <!-- Horizontal Icons for Sliding References -->
+    <div class="text-center mt-4">
+      <button class="btn btn-outline-secondary mx-2"><i class="bi bi-arrow-left"></i></button>
+      <button class="btn btn-outline-secondary mx-2"><i class="bi bi-arrow-right"></i></button>
+      <button class="btn btn-outline-secondary mx-2"><i class="bi bi-three-dots"></i></button>
+    </div>
+  </section>
+  
+
+  <!-- Contact Section -->
+  <section id="contact" class="mt-5">
+    <div class="contact-bg" style="background-image: url('assets/images/map.jpg'); background-size: cover; background-position: center; height: 100vh;">
+      <div class="container d-flex justify-content-center align-items-center h-100">
+        <div class="card p-4 bg-white shadow rounded" style="width: 600px;">
+          <h2 class="text-center">Contact Me</h2>
+  
+          <div class="row mt-4">
+            <!-- Left Side: Form -->
+            <div class="col-md-6">
+              <p>Feel free to contact me</p>
+  
+              <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+                <div class="form-group mb-3">
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                    <input type="text" class="form-control rounded" placeholder="Name" required [(ngModel)]="name" name="name" #nameInput="ngModel">
+                  </div>
+                  <div *ngIf="nameInput.invalid && nameInput.touched" class="text-danger">Name is required.</div>
+                </div>
+  
+                <div class="form-group mb-3">
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-file-earmark-text"></i></span>
+                    <input type="text" class="form-control rounded" placeholder="Subject" required [(ngModel)]="subject" name="subject" #subjectInput="ngModel">
+                  </div>
+                  <div *ngIf="subjectInput.invalid && subjectInput.touched" class="text-danger">Subject is required.</div>
+                </div>
+  
+                <div class="form-group mb-3">
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                    <input type="email" class="form-control rounded" placeholder="Email" required [(ngModel)]="email" name="email" #emailInput="ngModel">
+                  </div>
+                  <div *ngIf="emailInput.invalid && emailInput.touched" class="text-danger">Valid email is required.</div>
+                </div>
+  
+                <div class="form-group mb-3">
+                  <textarea class="form-control rounded" rows="4" placeholder="Your Message" required [(ngModel)]="message" name="message" #messageInput="ngModel"></textarea>
+                  <div *ngIf="messageInput.invalid && messageInput.touched" class="text-danger">Message is required.</div>
+                </div>
+  
+                <button type="submit" class="btn btn-success" [disabled]="contactForm.invalid">Send</button>
+              </form>
+            </div>
+  
+            <!-- Right Side: Contact Information -->
+            <div class="col-md-6">
+              <h5>Contact Information</h5>
+              <p><i class="bi bi-geo-alt"></i> Address: Toronto, Canada</p>
+              <p><i class="bi bi-telephone"></i> Phone: (437) 858-7938</p>
+              <p><i class="bi bi-envelope"></i> Email: mulukenbekele&commat;gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <!-- Footer Section -->
+<footer class="bg-light text-center py-4">
+    <div class="container">
+      <!-- Social Icons -->
+      <div class="mb-3">
+        <a href="#" class="social-icon me-3">
+          <img src="assets/images/fb.png" alt="Facebook" width="30">
+        </a>
+        <a href="#" class="social-icon me-3">
+          <img src="assets/images/ln.png" alt="Facebook" width="30">
+        </a>
+        <a href="#" class="social-icon me-3">
+          <img src="assets/images/fb.png" alt="Facebook" width="30">
+        </a>
+        <a href="#" class="social-icon me-3">
+          <img src="assets/images/ln.png" alt="Facebook" width="30">
+        </a>
+      </div>
+  
+      <!-- Full Name -->
+      <h4 class="font-weight-bold">Muluken Bekele</h4>
+  
+      <!-- Copyright Information -->
+      <p>&copy; 2024 Muluken Bekele. All rights reserved.</p>
+  
+      <!-- Design Credit -->
+      <p>Designed by me</p>
+    </div>
+  </footer>
+  
+  
+  
+  
+  
+  
+  
+  

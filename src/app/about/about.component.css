@@ -1,0 +1,24 @@
+/* Floating Social Media Icons */
+.social-icons {
+    position: absolute;
+    top: -50px; /* Adjust depending on how far into the home section they need to float */
+    z-index: 10;
+  }
+  
+  .social-icon img {
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon img:hover {
+    transform: scale(1.2);
+  }
+  
+  /* General Styling for About Section */
+  section h2 {
+    font-weight: bold;
+  }
+  
+  section p {
+    color: #6c757d;
+  }
+  
